@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Рос мебель в Ростове-на-Дону: кухни и корпусная мебель на заказ. Интерактивная 3D-кухня, этапы работы, отзывы и контакты.">
+  <title>Рос мебель — мебель на заказ в Ростове-на-Дону</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/page.css">
+  <script type="importmap">
+    {"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}
+  </script>
+  <script type="module" src="./assets/js/main.js"></script>
+</head>
+<body data-theme="wood">
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Рос мебель, главная">
+      <span class="brand-mark">Р</span>
+      <span>Рос мебель</span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#catalog">Мебель</a>
+      <a href="#process">Как заказать</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-phone" href="tel:+79185055646">+7 918 505-56-46</a>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Корпусная мебель на заказ · Ростов-на-Дону</p>
+        <h1 class="display" id="hero-title">Мебель, которая<br><em>подходит вам.</em></h1>
+        <p class="hero-lede">Кухни, шкафы и мебель для других комнат по вашей планировке. Попробуйте разные фасады и рассмотрите конструкцию кухни в интерактивной 3D-сцене.</p>
+        <div class="button-row">
+          <a class="button" href="https://wa.me/79185055646" target="_blank" rel="noopener">Обсудить проект в WhatsApp <span aria-hidden="true">↗</span></a>
+          <button class="button button-secondary" type="button" data-scroll-to="#configurator">Настроить кухню <span aria-hidden="true">↓</span></button>
+        </div>
+        <ul class="hero-facts">
+          <li>Мебель на заказ</li>
+          <li>Доставка</li>
+          <li>Оплата картой и по QR-коду</li>
+        </ul>
+      </div>
+
+      <div class="scene-shell" id="configurator" data-scene="kitchen" data-scene-state="loading">
+        <div class="scene-viewport" data-scene-viewport>
+          <div class="scene-poster" style="--poster-bg:#dfe1d6" role="img" aria-label="Кухня с оливковыми фасадами, статичная версия">
+            <svg viewBox="0 0 800 600" aria-hidden="true">
+              <polygon points="65,380 398,164 735,338 393,563" fill="#b5aa92"/>
+              <polygon points="126,316 386,158 386,341 126,493" fill="#f1ede3"/>
+              <polygon points="386,158 651,296 651,473 386,341" fill="#d8d3c6"/>
+              <g fill="#66705a">
+                <polygon points="161,331 246,279 246,404 161,456"/>
+                <polygon points="259,270 344,218 344,343 259,395"/>
+                <polygon points="398,227 483,275 483,400 398,352"/>
+              </g>
+              <polygon points="145,311 391,158 659,298 647,313 390,177 157,325" fill="#333a36"/>
+              <polygon points="301,419 489,296 628,367 435,494" fill="#333a36"/>
+              <polygon points="317,433 489,326 489,451 317,557" fill="#66705a"/>
+              <polygon points="489,326 610,389 610,509 489,451" fill="#556049"/>
+              <g stroke="#b49a67" stroke-width="6" stroke-linecap="round">
+                <line x1="224" y1="351" x2="224" y2="380"/>
+                <line x1="322" y1="289" x2="322" y2="318"/>
+                <line x1="446" y1="298" x2="446" y2="327"/>
+              </g>
+              <ellipse cx="491" cy="526" rx="32" ry="15" fill="#916e4d"/>
+              <rect x="486" y="526" width="10" height="48" fill="#222a25"/>
+            </svg>
+          </div>
+          <span class="scene-loading">Загружаем 3D-кухню…</span>
+        </div>
+        <div class="scene-toolbar">
+          <div class="control-stack">
+            <span class="control-label" id="finish-label">Фасад</span>
+            <div class="swatches" role="group" aria-labelledby="finish-label">
+              <button class="swatch" type="button" style="--swatch:#66705a" data-finish="olive" aria-pressed="true" aria-label="Фасад Олива" title="Олива"></button>
+              <button class="swatch" type="button" style="--swatch:#c0a583" data-finish="sand" aria-pressed="false" aria-label="Фасад Песок" title="Песок"></button>
+              <button class="swatch" type="button" style="--swatch:#a9654d" data-finish="clay" aria-pressed="false" aria-label="Фасад Глина" title="Глина"></button>
+            </div>
+          </div>
+          <div class="control-group">
+            <button class="chip" type="button" data-explode aria-pressed="false">Разобрать на части</button>
+            <button class="icon-button" type="button" data-motion aria-pressed="true">Пауза</button>
+            <button class="icon-button" type="button" data-reset-camera>Сбросить вид</button>
+          </div>
+          <p class="scene-status" data-scene-status aria-live="polite">Поворачивайте модель или меняйте фасады.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar" aria-label="Сведения о компании">
+      <span><strong>5,0 на 2ГИС</strong> · отзывы покупателей</span>
+      <span>Проспект Стачки, 151 · Ростов-на-Дону</span>
+      <span>Будни 10:00–19:00 · выходные 10:00–17:00</span>
+    </div>
+
+    <section class="content-section" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <p class="eyebrow">Что можно заказать</p>
+        <div>
+          <h2 id="catalog-title">Не только кухня.<br>Мебель для всей квартиры.</h2>
+          <p>Начните с комнаты и задачи. Дизайнер поможет превратить планировку и ваши пожелания в проект мебели.</p>
+        </div>
+      </div>
+      <div class="category-grid">
+        <article class="category-item"><span>01</span><h3>Кухни</h3><p>Рабочая зона, остров, хранение и фасады по вашему проекту.</p></article>
+        <article class="category-item"><span>02</span><h3>Шкафы и спальни</h3><p>Системы хранения и мебель для спальни без привязки к готовым размерам.</p></article>
+        <article class="category-item"><span>03</span><h3>Прихожие</h3><p>Мебель для компактного входа в дом и организации повседневных вещей.</p></article>
+        <article class="category-item"><span>04</span><h3>Детские и кабинеты</h3><p>Рабочие и учебные места, стеллажи и хранение для разных возрастов.</p></article>
+        <article class="category-item"><span>05</span><h3>Мебель для ванных</h3><p>Тумбы и решения для организации пространства ванной комнаты.</p></article>
+        <article class="category-item"><span>06</span><h3>Матрасы</h3><p>Дополнение к спальне — уточните доступные варианты у консультанта.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section" id="process" aria-labelledby="process-title">
+      <div class="split-feature">
+        <figure>
+          <img class="real-photo" src="./assets/images/showroom.jpg" alt="Светлый туалетный столик с открытыми секциями и зеркалом" width="1440" height="961" loading="lazy">
+          <figcaption class="photo-caption">Фото из публичного альбома Рос мебель на 2ГИС</figcaption>
+        </figure>
+        <div class="feature-copy">
+          <p class="eyebrow">От первого разговора до сборки</p>
+          <h2 id="process-title">Проект начинается с вашей комнаты.</h2>
+          <p>Обсудите с дизайнером планировку, сценарий использования и желаемые материалы. Конкретные сроки и стоимость рассчитываются после проекта.</p>
+          <ol class="process-list">
+            <li><div><strong>Покажите пространство</strong><p>Планировка, размеры, фотографии и ваши пожелания.</p></div></li>
+            <li><div><strong>Согласуйте проект</strong><p>Компоновка, материалы, фасады и расчёт с дизайнером.</p></div></li>
+            <li><div><strong>Примите работу</strong><p>Доставка и сборка мебели по согласованному проекту.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-heading">
+        <p class="eyebrow">Отзывы на 2ГИС</p>
+        <div><h2 id="reviews-title">Что говорят покупатели.</h2></div>
+      </div>
+      <div class="review-grid">
+        <figure class="review-card">
+          <blockquote>«Благодарю Ирину, очень компетентно сделала проект и просчет, подсказала много моментов по кухне, как сделать качественнее и удобнее. Остались довольны»</blockquote>
+          <figcaption><span>Татьяна А.</span><a href="https://2gis.ru/rostov-on-don/firm/3378229002059336/tab/reviews" target="_blank" rel="noopener">Источник: 2ГИС ↗</a></figcaption>
+        </figure>
+        <figure class="review-card">
+          <blockquote>«Классная мебель по доступным ценам, рекомендую!»</blockquote>
+          <figcaption><span>Максим З.</span><a href="https://2gis.ru/rostov-on-don/firm/3378229002059336/tab/reviews" target="_blank" rel="noopener">Источник: 2ГИС ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">Перед заказом</p>
+        <div><h2 id="faq-title">Частые вопросы.</h2></div>
+      </div>
+      <div class="faq-list">
+        <details><summary>Можно ли заказать мебель не только для кухни?</summary><p>Да. В каталоге компании также корпусная мебель и мебель для ванных комнат. В отзывах покупателей упоминаются спальни, прихожие, детские и кабинеты.</p></details>
+        <details><summary>Что подготовить к разговору с дизайнером?</summary><p>Размеры или план комнаты, несколько фотографий и примеры того, что вам нравится. Если точных размеров пока нет, начните с обсуждения задачи по телефону или WhatsApp.</p></details>
+        <details><summary>Есть ли доставка и как оплатить заказ?</summary><p>На странице компании в 2ГИС указана доставка. Доступны оплата картой, наличный расчёт, перевод с карты, банковский перевод и оплата по QR-коду.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-panel" id="contacts" aria-labelledby="contacts-title">
+      <div>
+        <p class="eyebrow">Обсудить мебель</p>
+        <h2 id="contacts-title">Расскажите,<br>что вы хотите создать.</h2>
+        <p>Напишите в WhatsApp или позвоните. Для первого разговора достаточно описать комнату и желаемую мебель.</p>
+        <div class="button-row">
+          <a class="button" href="https://wa.me/79185055646" target="_blank" rel="noopener">Написать в WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://t.me/+79185055646" target="_blank" rel="noopener">Telegram <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <dl class="contact-methods">
+        <div class="contact-method"><dt>Телефон</dt><dd><a href="tel:+79185055646">+7 918 505-56-46</a></dd></div>
+        <div class="contact-method"><dt>Адрес</dt><dd>Проспект Стачки, 151, Ростов-на-Дону</dd></div>
+        <div class="contact-method"><dt>Будни</dt><dd>10:00–19:00</dd></div>
+        <div class="contact-method"><dt>Выходные</dt><dd>10:00–17:00</dd></div>
+        <div class="contact-method"><dt>Маршрут</dt><dd><a href="https://2gis.ru/rostov-on-don/firm/3378229002059336" target="_blank" rel="noopener">Открыть в 2ГИС ↗</a></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="demo-note">Демонстрационный макет для переговоров. Не официальный сайт Рос мебель. Контакты, услуги, фото и отзывы — из публичной карточки компании на 2ГИС.</span>
+    <a href="https://2gis.ru/rostov-on-don/gallery/firm/3378229002059336" target="_blank" rel="noopener">Источник фото ↗</a>
+  </footer>
+</body>
+</html>
